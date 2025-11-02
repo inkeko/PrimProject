@@ -1,4 +1,4 @@
-#include "SzitaGenerator.h"
+#include "SzitaGenerator.hpp"
 #include <cmath>
 
 std::vector<bool> SzitaGenerator::szita;

@@ -1,5 +1,5 @@
 
-#include "PrimTeszt.h"
+#include "PrimTeszt.hpp"
 #include <cmath>
 
 bool PrimTeszt::ellenoriz(int n) {

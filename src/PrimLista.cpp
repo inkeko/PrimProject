@@ -1,4 +1,4 @@
-#include "PrimLista.h"
+#include "PrimLista.hpp"
 #include <vector>
 #include <cmath>
 

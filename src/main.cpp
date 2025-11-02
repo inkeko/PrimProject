@@ -1,9 +1,9 @@
 
 #include <iostream>
-#include "PrimTeszt.h"
-#include "Idomero.h"
-#include "PrimLista.h"
-#include "SzitaGenerator.h"
+#include "PrimTeszt.hpp"
+#include "Idomero.hpp"
+#include "PrimLista.hpp"
+#include "SzitaGenerator.hpp"
 
 // #include "SzitaGenerator.h" // majd később aktiváljuk
 
