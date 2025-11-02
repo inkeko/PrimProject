@@ -12,11 +12,23 @@ int main() {
     std::cout << "Adj meg egy számot, amit ellenőrizni szeretnél: ";
     std::cin >> szam;
 
+    const int KIS_SZAM_KUSZOB = 10000;
+
+
+
     std::cout << "\nVálaszd ki az ellenőrzési módszert:\n";
     std::cout << "1 - Egyszerű osztókeresés (PrimTeszt)\n";
     std::cout << "2 - Prímkeresés előre generált listából (PrimLista)\n";
     std::cout << "3 - Eratoszthenész szita (SzitaGenerator)\n";
-    std::cout << "Módszer száma: ";
+    std::cout << "4 - SIMD optimalizált szita (SIMDSzita)\n";
+    
+    std::cout << "\nAjánlás: ";
+    if (szam <= KIS_SZAM_KUSZOB) {
+    std::cout << "1 vagy 2 (gyorsabb kis számokra)\n";
+     } else {
+    std::cout << "3 vagy 4 (hatékonyabb nagy számokra)\n";
+     }
+      std::cout << "Módszer száma: ";
 
     int valasztas;
     std::cin >> valasztas;
