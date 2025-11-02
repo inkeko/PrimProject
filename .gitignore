@@ -1,0 +1,17 @@
+# Build mappa
+build/
+
+# VS Code beállítások 
+.vscode/
+
+# Fordító által generált fájlok
+*.exe
+*.obj
+*.o
+*.log
+
+# CMake cache
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
