@@ -5,7 +5,7 @@
 #include "PrimLista.hpp"
 #include "SzitaGenerator.hpp"
 
-// #include "SzitaGenerator.h" // majd később aktiváljuk
+
 
 int main() {
     int szam;
