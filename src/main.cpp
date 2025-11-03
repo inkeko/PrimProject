@@ -4,7 +4,7 @@
 #include "Idomero.hpp"
 #include "PrimLista.hpp"
 #include "SzitaGenerator.hpp"
-
+#include "SIMDSzita.hpp"
 
 
 int main() {
@@ -65,6 +65,27 @@ int main() {
         eredmeny = SzitaGenerator::ellenoriz(szam);
         ido.kiir("SzitaGenerator (csak keresés)");
     }
+    break;
+         case 4:
+         ido.indit();
+         {
+             SIMDSzita szita(2, szam); // alsó határ fixen 2, felső a megadott szám
+             szita.futtat();
+             szita.kiir(); 
+             // Ellenőrzés: ha szam prím, akkor szita[ (szam - 1)/2 ] == 1
+        if (szam == 2) {
+            eredmeny = true;
+        } else if (szam % 2 == 0 || szam < 2) {
+            eredmeny = false;
+        } else {
+            int index = (szam - 1) / 2;
+            eredmeny = szita.isPrim(szam);
+        }
+
+
+        
+            }
+              ido.kiir("SIMDSzita");
     break;
         default:
             std::cout << "Érvénytelen választás.\n";
