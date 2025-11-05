@@ -5,12 +5,12 @@
 #include "PrimLista.hpp"
 #include "SzitaGenerator.hpp"
 #include "SIMDSzita.hpp"
-
+#include "input_utils.hpp"
 
 int main() {
-    int szam;
-    std::cout << "Adj meg egy számot, amit ellenőrizni szeretnél: ";
-    std::cin >> szam;
+    long long szam = readPositiveLong();
+
+
 
     const int KIS_SZAM_KUSZOB = 10000;
 
@@ -30,8 +30,7 @@ int main() {
      }
       std::cout << "Módszer száma: ";
 
-    int valasztas;
-    std::cin >> valasztas;
+   int valasztas = readMenuChoice(1, 4);
 
     Idomero ido;
     bool eredmeny = false;
