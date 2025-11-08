@@ -5,7 +5,7 @@
 #include "PrimLista.hpp"
 #include "SzitaGenerator.hpp"
 #include "SIMDSzita.hpp"
-#include "input_utils.hpp"
+#include "utils/input.hpp"
 #include "utils/wait.hpp"
 #ifdef _WIN32
 #include <Windows.h>
