@@ -6,6 +6,7 @@
 #include "SzitaGenerator.hpp"
 #include "SIMDSzita.hpp"
 #include "input_utils.hpp"
+#include "utils/wait.hpp"
 #ifdef _WIN32
 #include <Windows.h>
 #endif
@@ -98,5 +99,9 @@ int main() {
     }
 
     std::cout << "\nA(z) " << szam << (eredmeny ? " prím.\n" : " nem prím.\n");
+
+    
+     waitForExit();
+
     return 0;
 }
