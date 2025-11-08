@@ -1,7 +1,7 @@
 
 #include <iostream>
 #include "PrimTeszt.hpp"
-#include "Idomero.hpp"
+#include "utils/Idomero.hpp"
 #include "PrimLista.hpp"
 #include "SzitaGenerator.hpp"
 #include "SIMDSzita.hpp"
@@ -99,8 +99,6 @@ int main() {
     }
 
     std::cout << "\nA(z) " << szam << (eredmeny ? " prím.\n" : " nem prím.\n");
-
-    
      waitForExit();
 
     return 0;
