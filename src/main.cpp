@@ -6,8 +6,14 @@
 #include "SzitaGenerator.hpp"
 #include "SIMDSzita.hpp"
 #include "input_utils.hpp"
+#ifdef _WIN32
+#include <Windows.h>
+#endif
+
 
 int main() {
+// Magyar karakterek konzolra
+    SetConsoleOutputCP(65001);
     long long szam = readPositiveLong();
 
 
