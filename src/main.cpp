@@ -1,12 +1,11 @@
-
 #include <iostream>
 #include "PrimTeszt.hpp"
-#include "utils/Idomero.hpp"
 #include "PrimLista.hpp"
 #include "SzitaGenerator.hpp"
 #include "SIMDSzita.hpp"
 #include "utils/input.hpp"
 #include "utils/wait.hpp"
+#include "utils/Idomero.hpp"
 #ifdef _WIN32
 #include <Windows.h>
 #endif
